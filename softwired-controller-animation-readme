@@ -1,0 +1,31 @@
+Softwired processor.
+ISA 
+H/w
+RAM 2048*16-bit (user programme)
+MDR,A is 16-bit registers
+PC , MAR 11-bit registers
+
+ Following NOt shown, control signals (E,L,I etc) ,IN/OUT flags (R, W)and external Interrfupt F)
+
+In Animation(pdf file)
+orange colour  lines shows the fetch (setting up contyrol signals)
+green colour  lines shows the execution of current instruction (transfer of bits)
+selcted block in thick bounded box, (in RAM it is green colour:  address and information)
+
+Microinstructions of the selected instructions are shown in magenta backgrounded box)
+left side is the address of RAM in black colour and right side micro control signals as per format.
+
+Purpled background box shows the ROM and  microinstructions of instruction blocks 
+ (few are shown BUN , BSA ,indirect tech etc)
+
+sheets 1-8 - fetch cycle (no interrupt pending, F=0)
+sheets 9-14 cycles (BSA direct, I=0, external interrupt F sets )
+sheets 15-16 fetch cycle (interrupt bit F=1 interrupt set)
+sheets 17-24 interrupt handling micro instructions
+sheets 25-30 fetch cycle (left over fetch cycles)
+sheets 31-34 BUN direct micro instructions
+sheets 35-42  fetch cycle (no interrupt pending)
+sheets 43-52 BUN indirect(I=1) micro instructions (46- to for indirect function)
+sheets 53-58  fetch cycle (no interrupt pending)
+
+
